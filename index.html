@@ -1,70 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-	<title>Thibaut DUCHESNE - Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Thibaut DUCHESNE</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<header>
-		<div class="container">
-			<div class="header-left">
-				<h1>Thibaut DUCHESNE</h1>
-			</div>
-			<div class="header-right">
-				<a href="#" class="btn btn-primary">Télécharger CV</a>
-				<a href="#" class="btn btn-secondary">Se connecter</a>
-			</div>
-		</div>
-	</header>
+  <!-- En-tête avec menu de navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login" class="login-button">Se connecter</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<section class="hero">
-		<div class="container">
-			<div class="hero-left">
-				<h2>Je suis un développeur web passionné</h2>
-				<p>Je suis spécialisé dans la création de sites web professionnels et fonctionnels pour des clients de toutes tailles.</p>
-			</div>
-			<div class="hero-right">
-				<img src="thibaut.jpg" alt="Thibaut DUCHESNE">
-			</div>
-		</div>
-	</section>
+  <!-- Section d'accueil -->
+  <section id="home">
+    <div class="intro">
+      <div class="circle-container">
+        <div class="circle"></div>
+        <img src="thibaut.jpg" alt="Thibaut DUCHESNE" class="profile-pic">
+      </div>
+      <h1>Thibaut DUCHESNE</h1>
+      <h2>Développeur Web Full Stack</h2>
+      <p>Je suis un développeur web passionné, avec une expérience de travail sur des projets allant de simples sites web à des applications web complexes. Mon objectif est de fournir des solutions créatives et efficaces pour chaque projet.</p>
+      <a href="#cv" class="cta">Télécharger mon CV</a>
+    </div>
+  </section>
 
-	<section class="projects">
-		<div class="container">
-			<h2>Mes projets</h2>
-			<div class="projects-grid">
-				<div class="project">
-					<a href="#">
-						<img src="project1.jpg" alt="Projet 1">
-						<h3>Projet 1</h3>
-					</a>
-				</div>
-				<div class="project">
-					<a href="#">
-						<img src="project2.jpg" alt="Projet 2">
-						<h3>Projet 2</h3>
-					</a>
-				</div>
-				<div class="project">
-					<a href="#">
-						<img src="project3.jpg" alt="Projet 3">
-						<h3>Projet 3</h3>
-					</a>
-				</div>
-				<div class="project">
-					<a href="#">
-						<img src="project4.jpg" alt="Projet 4">
-						<h3>Projet 4</h3>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+  <!-- Section CV -->
+  <section id="cv">
+    <h3>Mon CV</h3>
+    <p>Voici un aperçu de mon expérience et de mes compétences:</p>
+    <ul>
+      <li>Expérience professionnelle: 5 ans en tant que développeur web full-stack</li>
+      <li>Langages de programmation: HTML, CSS, JavaScript, PHP, Python</li>
+      <li>Frameworks et bibliothèques: React, Angular, Vue.js, Laravel, Django</li>
+      <li>Outils et technologies: Git, MySQL, MongoDB, AWS, Docker</li>
+    </ul>
+  </section>
 
-	<footer>
-		<div class="container">
-			<p>&copy; 2023 Thibaut DUCHESNE - Tous droits réservés.</p>
-		</div>
-	</footer>
-</body>
-</html>
+  <!-- Section projets -->
+  <section id="projects">
+    <h3>Mes projets</h3>
+    <p>Voici quelques-uns des projets sur lesquels j'ai travaillé:</p>
+    <div class="project-container">
+      <div class="project">
+        <img src="project-1.jpg" alt="Project 1">
+        <h4>Projet 1</h4>
+        <p>Description du projet 1</p>
+      </div>
+      <div class="project">
+        <img src="project-2.jpg" alt="Project 2">
+        <h4>Projet 2</h4>
+        <p>Description du projet 2</p>
+      </div>
+      <div class="project">
+        <img src="project-3.jpg" alt="Project 3">
+        <h4>Projet 3</h4>
+        <p>Description du projet 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section contact -->
+    <!-- Section contact -->
+	<section id="contact">
+		<h3>Contactez-moi</h3>
+		<form action="submit-form.php" method="POST">
+		  <label for="name">Nom</label>
+		  <input type="text" id="name" name="name" required>
+		  <label for="email">Email</label>
+		  <input type="email" id="email" name="email" required>
+		  <label for="message">Message</label>
+		  <textarea id="message" name="message" required></textarea>
+		  <input type="submit" value="Envoyer">
+		</form>
+	  </section>
+	
+	  <!-- Section de connexion -->
+	  <section id="login">
+		<h3>Se connecter</h3>
+		<form action="login.php" method="POST">
+		  <label for="password">Mot de passe</label>
+		  <input type="password" id="password" name="password" required>
+		  <input type="submit" value="Se connecter">
+		</form>
+	  </section>
+	
+	  <!-- Pied de page -->
+	  <footer>
+		<p>&copy; 2023 Thibaut DUCHESNE - Tous droits réservés</p>
+	  </footer>
+	
+	  <!-- Script pour le changement de couleur de la bordure de la photo de profil -->
+	  <script src="script.js"></script>
+	</body>
+	
+	</html>
+	
