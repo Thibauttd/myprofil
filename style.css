@@ -94,7 +94,7 @@ nav a.login {
 
   nav a.active {
     background-color: transparent;
-    color: #fff;
+    color: #d62b2b;
   }
 
   nav a:hover {
