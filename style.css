@@ -1,8 +1,8 @@
 /* Styles pour le menu */
 nav {
-  background-color: #d42525;
+  background-color: #1e1e1e;
   font-size: 18px;
-  color: #a71010;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,7 +94,7 @@ nav a.login {
 
   nav a.active {
     background-color: transparent;
-    color: #d62b2b;
+    color: #fff;
   }
 
   nav a:hover {
