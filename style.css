@@ -53,3 +53,87 @@ nav a.active:hover {
   background-color: #fff;
   color: #1e1e1e;
 }
+
+/* Styles pour les couleurs */
+nav a.cv {
+  background-color: #36B0C6;
+}
+
+nav a.projects {
+  background-color: #2C3E50;
+}
+
+nav a.contact {
+  background-color: #E87E04;
+}
+
+nav a.login {
+  background-color: #27AE60;
+}
+
+/* Styles pour les appareils mobiles */
+@media only screen and (max-width: 768px) {
+  nav {
+    height: auto;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    padding: 10px 0;
+  }
+
+  nav a.active {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  nav a:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 3px 0;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-toggle .bar:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle .bar:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .menu-toggle.active .bar:first-child {
+    transform: rotate(-45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.active .bar:last-child {
+    transform: rotate(45deg) translate(5px, -5px);
+  }
+}
