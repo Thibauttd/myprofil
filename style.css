@@ -1,8 +1,17 @@
 /* Styles pour le menu */
 nav {
-  background-color: #333;
+  background-color: #1e1e1e;
   font-size: 18px;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 nav ul {
@@ -10,7 +19,8 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 nav li {
@@ -20,11 +30,26 @@ nav li {
 
 nav a {
   display: block;
-  padding: 15px;
+  padding: 0 20px;
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
 }
 
 nav a:hover {
-  background-color: #555;
+  background-color: #4e4e4e;
+}
+
+/* Style pour le lien actif */
+nav a.active {
+  background-color: #fff;
+  color: #1e1e1e;
+}
+
+nav a.active:hover {
+  background-color: #fff;
+  color: #1e1e1e;
 }
